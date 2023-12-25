@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cube{
+            height:200px;
+            width:200px;
+            background-color:red;
+            margin-top:20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cube"></div>
+    <div class="cube"></div>
+    <div class="cube"></div>
+    <div class="cube"></div>
+    <div class="cube"></div>
+
+    <script>
+        var model=document.getElementsByClassName("cube");
+        for( let i=0;i<model.length; i++){
+            model[i].innerHTML=([i])
+        }
+    </script>
+</body>
+</html>
